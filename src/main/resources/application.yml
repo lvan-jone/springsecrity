@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: spring_security
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/lwsystem?useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  thymeleaf:
+    cache: false
